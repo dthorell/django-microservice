@@ -3,17 +3,25 @@ A Django project template for microservices.
 
 ## How to install
 
-Create a new project based on this template using:
-
-```
-$ django-admin.py startproject \
-  --template=https://github.com/kasappeal/django-microservice/archive/master.zip \
-  --extension=py,txt \
-  project_name
-```
-
 Install virtualenv dependencies using:
 
 ```
-$ pip install -r requirements.txt
+$ pipenv --python 3.8 install django
 ```
+
+Create folder structure:
+```
+$ mkdir src
+$ cd src
+```
+
+Create a new project based on this template using:
+
+```
+$ django-admin.py startproject --template=https://github.com/dthorell/django-microservice/archive/master.zip project_name .
+```
+
+Install rest of the dependencies:
+```
+
+
