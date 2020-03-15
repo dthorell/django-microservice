@@ -12,16 +12,16 @@ $ pipenv --python 3.8 install django
 Create folder structure:
 ```
 $ mkdir src
-$ cd src
 ```
 
 Create a new project based on this template using:
 
 ```
-$ django-admin.py startproject --template=https://github.com/dthorell/django-microservice/archive/master.zip project_name .
+$ pipenv shell
+$ django-admin.py startproject --template=https://github.com/dthorell/django-microservice/archive/master.zip project_name src
 ```
 
 Install rest of the dependencies:
 ```
-
-
+$ pipenv install -r src/requirements.txt
+```
