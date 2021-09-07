@@ -6,7 +6,7 @@ A Django project template for microservices.
 Install virtualenv dependencies using:
 
 ```
-$ pipenv --python 3.8 install django
+$ pipenv install django djangorestframework whitenoise
 ```
 
 Create folder structure:
@@ -19,9 +19,4 @@ Create a new project based on this template using:
 ```
 $ pipenv shell
 $ django-admin.py startproject --template=https://github.com/dthorell/django-microservice/archive/master.zip project_name src
-```
-
-Install rest of the dependencies:
-```
-$ pipenv install -r src/requirements.txt
 ```
